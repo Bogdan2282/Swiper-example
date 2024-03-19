@@ -40,19 +40,7 @@ const plumberNotify =(Title) => {
         sound: true
     })
 }
-/*
-gulp.task('connectDev', function () {
-    connect.server({
-      name: 'Dev App',
-      root: 'build',
-      host: '192.168.1.139',
-      port: 8888,
-      livereload: true,
-      open: true
-    });
-  });
 
-*/
 gulp.task('html:dev', function(){
 return gulp
 .src(['./src/html/**/*.html','!./src/html/blocks/*.html'])
@@ -60,7 +48,6 @@ return gulp
 .pipe(plumber(plumberNotify('HTML')))
 .pipe(fileInclude(fileIncludeSetting))
 .pipe(gulp.dest('./build/'))
-//.pipe(connect.reload());
 });
 
 gulp.task('sass:dev', function(){
@@ -73,14 +60,12 @@ return gulp
 .pipe(sass().on('error', sass.logError))
 .pipe(sourceMaps.write())
 .pipe(gulp.dest('./build/css/'))
-//.pipe(connect.reload());
 });
 
 gulp.task('images:dev', function(){
     return gulp
     .src('./src/images/**/*')
     .pipe(changed('./build/images/'))
-    //.pipe(imegemin({verbose: true}))
     .pipe(gulp.dest('./build/images/'))
 });
 
@@ -111,9 +96,8 @@ gulp.task('js:dev', function(){
 gulp.task('server:dev', function(){
     return gulp.src('./build/')
     .pipe(server({
-        host: '192.168.1.139',
         livereload: true,
-        open: false
+        open: true
     }))
 });
 

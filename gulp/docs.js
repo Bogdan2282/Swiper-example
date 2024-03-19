@@ -28,7 +28,7 @@ const fs = require('fs');
 
 const sourceMaps = require('gulp-sourcemaps');
 
-const grupMedia = require('gulp-group-css-media-queries');// полезно для продакшена 
+const grupMedia = require('gulp-group-css-media-queries');
 
 const plumber = require('gulp-plumber')
 
@@ -65,14 +65,11 @@ return gulp
 .src('./src/scss/*.scss')
 .pipe(changed('./docs/css/'))
 .pipe(plumber(plumberNotify('SCSS')))
-//.pipe(sourceMaps.init())
 .pipe(autoprefixer())
 .pipe(sassGlob())
-//.pipe(grupMedia())
 .pipe(sass())
 .pipe(csso())
 .pipe(webpCss())
-//.pipe(sourceMaps.write())
 .pipe(gulp.dest('./docs/css/'))
 });
 
@@ -84,7 +81,6 @@ gulp.task('images:docs', function(){
     .pipe(gulp.dest('./docs/images/'))
     .pipe(gulp.src('./src/images/**/*'))
     .pipe(changed('./docs/images/'))
-    .pipe(imegemin({verbose: true}))
     .pipe(gulp.dest('./docs/images/'))
 });
 

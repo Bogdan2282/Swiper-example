@@ -1,7 +1,6 @@
 {
-    "name": "gulp-html-scss",
+    "name": "swiper-example",
     "version": "1.0.0",
-    "description": "new gulp website",
     "author": "Bogdan",
     "devDependencies": {
         "@babel/core": "^7.23.7",
@@ -32,16 +31,9 @@
         "style-loader": "^3.3.3",
         "webpack-stream": "^7.0.0"
     },
-    "dependencies": {
-        "air-datepicker": "^3.4.0",
-        "swiper": "^11.0.5"
-    },
     "babel": {
         "presets": [
             "@babel/preset-env"
         ]
-    },
-    "browserslist": [
-        "last 4 versions"
-    ]
+    } 
 }
