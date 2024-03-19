@@ -1,0 +1,35 @@
+.sliderPrev_images {
+    width: 44.0046px;
+    height: 44.0046px;
+}
+.sliderNext_images {
+    width: 44.0046px;
+    height: 44.0046px;
+}
+.slider_controls_arrows {
+ display: flex;
+ justify-content: space-between;
+}
+.slider_controls_count {
+    font-family: "Montserrat", sans-serif;
+    color: #fff !important;
+    font-size: 18.0004px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 0.5411px;
+}
+.slider_controls_curent,
+.swiper-pagination-current {
+    position: absolute;
+    top: 0px;
+    left: 36.9997px;
+    font-weight: 600;
+    //opacity: 0.3;
+}
+.slider_controls_total {
+    position: absolute;
+    bottom: 47.9995px;
+    left: 36.9997px;
+    //opacity: 0.9;
+}

@@ -1,0 +1,17 @@
+.column {
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1.0001px;
+    column-count: 3;
+    column-gap: 182.0005px ;
+    .names{
+        font-size: 21.9996px;
+        font-weight: 500;
+        color: #fff;
+        column-count: auto;
+    }
+    .counts{
+        font-size: 37.9998px;
+        font-weight: 600;
+        color: #fff;
+    }
+}

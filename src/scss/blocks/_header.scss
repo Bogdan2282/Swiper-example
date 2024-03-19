@@ -1,0 +1,105 @@
+
+.header {
+    height: 100vh;
+    position: relative;
+    background-image: url("./../images/backgraund.png");
+    background-size: cover;
+}
+
+.header a {
+    color: #fff;
+}
+
+.header__content {
+    position: absolute;
+    z-index: 9;
+    top: 47.9995px;
+    left: 78.9998px;
+    right: 71.0003px;
+    bottom: 52.9999px;
+    pointer-events: none;
+    @media (max-width: 1540px) {
+        top: 2.5vw;
+        left: 4.1146vw;
+        right: 3.6979vw;
+        bottom: 2.7604vw;
+    }
+}
+
+.header__social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    pointer-events: all;
+}
+
+.header__indicators {
+    position: absolute;
+    right: 92.9999px;
+    bottom: 0px;
+    height: 73.0004px;
+    width: 645.9998px;
+}
+.header__additional_information{
+    display: flex;
+    flex-direction: column;
+    gap: 56.0002px;
+    position: absolute;
+    top: 154.0004px;
+    left: 0px;
+    height: 448.0002px;
+    width: 508.9997px;
+}
+.header__endless {
+    @media (max-width: 843.9995px) {
+        display: none;
+    }
+    @media (max-height: 600.0005px) {
+        top: 20%;
+    }
+}
+.header__watch_now {
+    @media (max-width: 843.9995px) {
+        display: none;
+    }
+    @media (max-height: 600.0005px) {
+        top: 60%;
+    }
+    pointer-events: all;
+}
+.header__know_more {
+    @media (max-width: 843.9995px) {
+        display: none;
+    }
+    @media (max-height: 600.0005px) {
+        top: 80%;
+    }
+    pointer-events: all;
+}
+
+.header__scrollbar_controls {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+    height: 391px;
+    width: 94px;
+}
+.header__scrollbar {
+    pointer-events: all;
+    position: absolute;
+    left: 50.9998px;
+    top: 25.9999px;
+    bottom: 74.0005px;
+    height: 9.9997px;
+    width: 290.9995px;
+    transform: rotate(90deg);
+    transform-origin: left top;
+}
+.header__slider_controls {
+    pointer-events: all;
+    position: absolute;
+    bottom: 0px;
+    width: 94.0086px;
+    height: 44.0575px;
+}

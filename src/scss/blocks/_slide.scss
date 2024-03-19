@@ -1,0 +1,22 @@
+.slide{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #3d3d3d;
+    background-size: cover;
+
+    &--01{
+        background-image: url("./../images/backgraund.png");
+    }
+    &--02{
+        background-image: url(./../images/02.jpg);
+    }
+    &--03{
+        background-image: url(./../images/03.jpg);
+    }
+    &--04{
+        background-image: url(./../images/04.jpg);
+    }
+    &--05{
+        background-image: url(./../images/05.jpg);
+    }
+}
