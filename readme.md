@@ -1,4 +1,4 @@
-# Project Name
+# Swiper-example
 
 ## Description
 The project is a website built using Swiper, a modern touch slider library for web and mobile. It utilizes various web technologies including HTML, CSS, SCSS, Gulp, and JavaScript to create a dynamic and responsive user interface.
