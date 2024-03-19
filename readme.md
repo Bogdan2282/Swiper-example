@@ -12,7 +12,7 @@ The project is a website built using Swiper, a modern touch slider library for w
 
 ## Installation
 To set up the project locally, follow these steps:
-1. Clone the repository: `git clone https://github.com/your/repository.git`
+1. Clone the repository: `git clone https://github.com/Bogdan2282/Swiper-example.git`
 2. Install dependencies: `npm install`
 3. Run Gulp to compile SCSS, minify CSS/JS, etc.: `gulp`
 
